@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px; 
+    
+
+}
+
+.container form {
+    display: flex;
+    align-items: center;
+}
+
+.container textarea {
+    height: 20px; 
+    resize: none;
+   
+}
+
+.container input[type="submit"] {
+    height: 25px;
+    margin-left: 2px; 
+}

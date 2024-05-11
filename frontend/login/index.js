@@ -8,7 +8,15 @@ async function login(event){
         email,
         password
     }
+    try{
+        let res = await axios.post('http://localhost:1234/login',obj)
+        console.log(res.data.user[0].name)
+        alert(' User logged successfully')   
+        localStorage.setItem('token',res.data.token)
+        window.location.href='../frontend/index.html'
+    }
+    catch(err){
+        console.log(err)
+    }
 
-    let res = await axios.post('http://localhost:1234/login',obj)
-        alert(' User logged successfully') 
 }
