@@ -13,6 +13,7 @@ async function login(event){
         console.log(res.data.user[0].name)
         alert(' User logged successfully')   
         localStorage.setItem('token',res.data.token)
+        localStorage.setItem('username',res.data.user[0].name)
         window.location.href='../frontend/index.html'
     }
     catch(err){

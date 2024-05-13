@@ -31,3 +31,10 @@ body {
     height: 25px;
     margin-left: 2px; 
 }
+
+#messages{
+    margin-left:490px;
+    height:40px;
+    font-size: medium;
+    font-weight: bold;
+}
